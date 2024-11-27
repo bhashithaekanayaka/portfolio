@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PURE MOMENTS</title>
+
+    <!-- External CSS Libraries -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display:ital@1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom Font for Title -->
+    <style>
+        @font-face {
+            font-family: 'Brittany Signature';
+            src: url('BrittanySignature.ttf') format('truetype');
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        header, footer {
+            background-color: #1c1c1c;
+            color: #f2f2f2;
+        }
+
+        header {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Brittany Signature', cursive;
+            font-size: 64px;
+            color: #f7b731;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+            font-style: italic;
+            color: #ddd;
+            margin-top: 10px;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Gallery Section */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: 45%;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            background-color: #333;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            opacity: 0.85;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            opacity: 1;
+        }
+
+        .gallery-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .gallery-item .overlay p {
+            color: #f7b731;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Video Section */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .video-container video {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #1e1e1e;
+            text-align: center;
+            color: #d3d3d3;
+        }
+
+        .contact h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: #f7b731;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+        }
+
+        footer .social-icons {
+            font-size: 30px;
+        }
+
+        footer .social-icons a {
+            margin: 0 15px;
+            color: #f7b731;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>PURE MOMENTS</h1>
+        <p>Memories made together last forever.</p>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <a href="productions/">
+                    <img src="PIP08149.jpg" alt="Wedding Films">
+                    <div class="overlay"><p>Wedding Films</p></div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="productions/">
+                    <img src="_AIP9960.jpg" alt="Wedding Photography">
+                    <div class="overlay"><p>Wedding Photography</p></div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="weddings/">
+                    <img src="Ufntitled-1.jpg" alt="Events">
+                    <div class="overlay"><p>Events</p></div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="weddings/">
+                    <img src="IMG_2250.jpg" alt="Baby Shoots">
+                    <div class="overlay"><p>Baby Shoots</p></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+   <section class="section video-container">
+    <video controls autoplay loop muted>
+        <source src="preshoot s.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+
+    <!-- Contact Section -->
+    <section class="section contact">
+        <h1>CONTACT ME</h1>
+        <p>"Let's talk about what you want!"</p>
+        <div class="contact-info">
+            <p><i class="fa fa-phone" style="margin-right: 10px;"></i> +94 70 49 66 675</p>
+            <p><i class="fa fa-map-marker" style="margin-right: 10px;"></i> Kurunegala, Sri Lanka</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/puremoments" target="_blank"><i class="fa fa-facebook-official"></i></a>
+            <a href="https://www.youtube.com/channel/" target="_blank"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.instagram.com/BhashithaEkanayaka/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p class="w3-medium" style="color: #aaa; margin-top: 10px;">&copy; 2024 PURE MOMENTS</p>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+    <script>
+        const lenis = new Lenis({});
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+    </script>
+</body>
+</html>
